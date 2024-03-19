@@ -49,7 +49,7 @@ function App() {
     console.log(`Clicked on the step: step ${thisstep} of the event ${e.target.textContent}`);
     let cbutton = e.target;
     if (thisstep === 1) {
-      if (sform1.mname == " " || sform1.memail == " " || sform1.mphone == " ") {
+      if (sform1.mname === " " || sform1.memail === " " || sform1.mphone === " ") {
         window.alert("Name, email and phone number cannot be empty");
       } else {
         step1logic(cbutton, thisstep, msuse);
